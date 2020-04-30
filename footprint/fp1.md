@@ -21,13 +21,19 @@
 ## Docker 설치
 - [docker](https://github.com/docker/toolbox/releases)를 다운로드하여 실행 -> docker quickstarter & oracle VirtualBox 생성
   <p align = 'center'>
-  <img src = "https://github.com/KGJsGit/my_Cloud-studio/blob/master/pics/docker1.JPG">
-  (고래가 나오면 성공!)
+    <img src = "https://github.com/KGJsGit/my_Cloud-studio/blob/master/pics/docker1.JPG"><br>
+    (고래가 나오면 성공!)
   </p>
 - docker를 이용해서 docker hub의 ubuntu 이미지 설치
   <p align = 'center'>
-  <img src = "https://github.com/KGJsGit/my_Cloud-studio/blob/master/pics/doc1.JPG">
-  <img src = "https://github.com/KGJsGit/my_Cloud-studio/blob/master/pics/doc3.JPG">
-  (VirtualBox와는 비교도 안되게 빠르다!!)
+    <img src = "https://github.com/KGJsGit/my_Cloud-studio/blob/master/pics/doc1.JPG"><br>
+    <img src = "https://github.com/KGJsGit/my_Cloud-studio/blob/master/pics/doc3.JPG"><br>
+    (VirtualBox와는 비교도 안되게 빠르다!!)
   </p>
 - 마찬가지로 mysql까지 설치하고 확인!
+  <p align = 'center'>
+    <img src = "https://github.com/KGJsGit/my_Cloud-studio/blob/master/pics/doc4.JPG">
+    <img src = "https://github.com/KGJsGit/my_Cloud-studio/blob/master/pics/doc5.JPG"><br>
+    (컨테이너 위에서 정상 작동하는 mysql)
+  </p>
+
