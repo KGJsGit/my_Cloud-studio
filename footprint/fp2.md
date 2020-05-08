@@ -44,5 +44,5 @@
 - workspace디렉토리로 이동해서 touch 명령어를 통해 Hello.txt 파일 생성
 
 ## 느낀점
-- window prompt 명령어와 비슷한 점이 많아서 쉽게 익힐 수 있었습니다.
+- Windows prompt 명령어와 비슷한 점이 많아서 쉽게 익힐 수 있었습니다.
 - 마치 해커가 된 느낌..? 👨‍💻👨‍💻
