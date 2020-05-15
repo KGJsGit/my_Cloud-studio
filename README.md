@@ -7,3 +7,4 @@
 # 👣Footprint
 1. [Hello, Docker!](https://github.com/KGJsGit/my_Cloud-studio/blob/master/footprint/fp1.md)
 2. [우분투랑 친해지기](https://github.com/KGJsGit/my_Cloud-studio/blob/master/footprint/fp2.md)
+3. [권한 관리]()
