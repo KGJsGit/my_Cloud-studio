@@ -15,26 +15,38 @@
   - Java/spring 기반 웹에선 Apache Tomcat이 거의 필요하기 때문에 국내 웹 서버의 대다수를 차지합니다.
   - Thread-Process 구조로 클라이언트 request 하나당 thread 하나로 처리합니다. 그렇기 때문에 요청이 많아질수록 자원낭비가 심해져서 성능이 몹시 저하됩니다.
   - 이때문에 [C10k Problem](https://en.wikipedia.org/wiki/C10k_problem)와 같은 이슈가 존재합니다.
+  <p align = 'center'>
+   <img src = "https://github.com/KGJsGit/my_Cloud-studio/blob/master/pics/fp4/fp4_1.gif">
+   </p>
 - <b>Nginx</b>
   - Nginx는 위에서 얘기한 C10K Problem을 해결하기 위해 나온 오픈소스 웹 서버 프로그램입니다.
   - Nginx는 Event-Driven구조로 여러개의 커넥션을 모두 잡아와서 Event-Handler에 넣고 먼저 처리되는 것부터 로직을 실행합니다.
   - 역사가 오래되지 않았지만 좋은 성능으로 아파치와의 점유율 싸움에서 지지 않고 있습니다.
+  <p align = 'center'>
+   <img src = "https://github.com/KGJsGit/my_Cloud-studio/blob/master/pics/fp4/fp4_2.gif">
+  </p>
   - <b>Nginx로 웹서버를 구축해봅시다!</b>
   
 ## Debian-buster + Nginx로 웹서버를 만들기
 - 우선 docker를 실행시키고 Debian-buster 컨테이너를 만듭니다.
 - Debian-buster를 쓰는 이유는 안정적이며 최신의 OS환경을 가지고 있기 때문입니다.
   ```
-  $ docker run -it --name [컨테이너 명{필자는 debserver}] -d -p 80:80 dabian:buster
+  $ docker run -it --name [컨테이너 명] -d -p 80:80 dabian:buster
   ```
 - run 명령어는 create + start + attach를 가집니다.
 - -p 80:80에서 앞의 80은 host port를 뒤의 80은 container port를 의미합니다.
 - Windows와 docker 사이에 Oracle VirtualBox가 존재하기 때문에 요청이 바로 도커 컨테이너로 진입할 수 있도록 Port Forwarding을 해줍시다.
-
+  <p align = 'center'>
+   <img src = "https://github.com/KGJsGit/my_Cloud-studio/blob/master/pics/fp4/fp4_4.JPG">
+  </p>
 - ctrl+p+q로 debian-buster를 dettach한 후 컨테이너가 잘 만들어졌나 확인해봅시다.
   ```
   $ docker ps -a
   ```
+  <p align = 'center'>
+   <img src = "https://github.com/KGJsGit/my_Cloud-studio/blob/master/pics/fp4/fp4_3.JPG">
+   (필자는 debserver라는 이름으로 만들었다.)
+  </p>
 - davian-buster에 attach해서 기본 패키지들을 설치한 뒤 nginx를 설치합시다.
   ```
   $ apt update                  // apt 저장소 업데이트
@@ -51,6 +63,9 @@
   $ service nginx status        // 잘 구동되는지 확인하는 명령어
   ```
 - 웹 브라우저를 켜고  ```localhost``` 로 들어가서 nginx가 잘 구동되는지 확인해봅시다.
+  <p align = 'center'>
+   <img src = "https://github.com/KGJsGit/my_Cloud-studio/blob/master/pics/fp4/fp4_9.JPG">
+  </p>
 
 - 이제 php를 연동시켜봅시다. 7.4은 불안정하니 7.3으로 설치하겠습니다.
   ```
@@ -61,12 +76,22 @@
   $ cd /etc/nginx/sites-available
   $ vim default
   ```
+  <p align = 'center'>
+   <img src = "https://github.com/KGJsGit/my_Cloud-studio/blob/master/pics/fp4/fp4_5.JPG"><br>
+    (노란부분이 주석처리가 되어있는데 주석을 뺴주면 된다.)
+  </p>
 - 다음 수정 파일은 php.ini입니다.
 - vim에서 ```/```를 사용해서 원하는 키워드로 빠르게 이동할 수 있습니다.
   ```
   $ cd /etc/php/7.3/fpm
   $ vim php.ini
   ```
+  <p align = 'center'>
+   <img src = "https://github.com/KGJsGit/my_Cloud-studio/blob/master/pics/fp4/fp4_6.JPG"><br>
+   (OFF -> ON)
+   <img src = "https://github.com/KGJsGit/my_Cloud-studio/blob/master/pics/fp4/fp4_7.JPG">
+   (1 -> 0)
+  </p>
 - 연동이 잘 되었는지 확인하려면 nginx를 restart하고 php를 start해주면 됩니다.
   ```
   $ service nginx restart
@@ -80,6 +105,9 @@
     phpinfo();
     ?>
   ```
- 
- ## 
+ <p align = 'center'>
+   <img src = "https://github.com/KGJsGit/my_Cloud-studio/blob/master/pics/fp4/fp4_8.JPG">
+  </p>
+  
+ ## 느낀점 
     
