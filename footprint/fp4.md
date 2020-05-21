@@ -28,7 +28,7 @@
   <p align = 'center'>
    <img src = "https://github.com/KGJsGit/my_Cloud-studio/blob/master/pics/fp4/fp4_2.gif">
   </p>
-  - <b>Nginx로 웹서버를 구축해봅시다!</b>
+- <b>Nginx로 웹서버를 구축해봅시다!</b>
   
 ## Debian-buster + Nginx로 웹서버를 만들기
 - 우선 docker를 실행시키고 Debian-buster 컨테이너를 만듭니다.
@@ -112,6 +112,9 @@
    <img src = "https://github.com/KGJsGit/my_Cloud-studio/blob/master/pics/fp4/fp4_8.JPG">
   </p>
   
- ## 느낀점 
+## 발생했던 이슈들
+- 기존에 아파치로 JSP를 올린적이 있어서 사용포트가 겹쳤었습니다. 포트를 다르게 할당해주면 해결됩니다.
+  
+## 느낀점 
  - 간단한 방법으로 가상환경에서 웹서버를 만들어보니 신기했습니다. 다양하게 확장해서 사용해보고 싶습니다.
  - 가면 갈수록 느끼지만 리눅스OS는 대단한 물건이네요!
