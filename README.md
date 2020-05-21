@@ -6,5 +6,6 @@
 
 # 👣Footprint
 1. [Hello, Docker!](https://github.com/KGJsGit/my_Cloud-studio/blob/master/footprint/fp1.md)
-2. [우분투랑 친해지기](https://github.com/KGJsGit/my_Cloud-studio/blob/master/footprint/fp2.md)
-3. [권한 관리]()
+2. [LinuxOS랑 친해지기](https://github.com/KGJsGit/my_Cloud-studio/blob/master/footprint/fp2.md)
+3. [VIM이랑 친해지기]()
+4. [Debian+nginx+php로 웹서버 구축하기]()
