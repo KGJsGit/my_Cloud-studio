@@ -7,6 +7,9 @@
 - 올바른 HTTP Request가 웹서버에 도착하면 HTTP 서버는 요청된 파일(홈페이지)를 HTTP response로 보냅니다.
 - 즉, 웹서버를 구축한다는 것은 사용자에게 파일(홈페이지)을 서비스 받을 수 있도록 하는 것입니다!
 - 웹서버는 하드웨어 형태로 존재하는게 일반적이지만, 클라우드를 활용하면 무형의 웹서버를 굴릴 수 있습니다!
+  <p align = 'center'>
+   <img src = "https://github.com/KGJsGit/my_Cloud-studio/blob/master/pics/fp4/fp4_0.png">
+  </p>
 
 ## 클라우드를 위한 리눅스 웹서버의 종류
 - 대표적으로 <b>Apache</b>와 <b>Nginx</b>가 있습니다.
@@ -89,7 +92,7 @@
   <p align = 'center'>
    <img src = "https://github.com/KGJsGit/my_Cloud-studio/blob/master/pics/fp4/fp4_6.JPG"><br>
    (OFF -> ON)
-   <img src = "https://github.com/KGJsGit/my_Cloud-studio/blob/master/pics/fp4/fp4_7.JPG">
+   <img src = "https://github.com/KGJsGit/my_Cloud-studio/blob/master/pics/fp4/fp4_7.JPG"><br>
    (1 -> 0)
   </p>
 - 연동이 잘 되었는지 확인하려면 nginx를 restart하고 php를 start해주면 됩니다.
@@ -110,4 +113,5 @@
   </p>
   
  ## 느낀점 
-    
+ - 간단한 방법으로 가상환경에서 웹서버를 만들어보니 신기했습니다. 다양하게 확장해서 사용해보고 싶습니다.
+ - 가면 갈수록 느끼지만 리눅스OS는 대단한 물건이네요!
