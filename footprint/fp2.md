@@ -3,25 +3,25 @@
 - 2020.05.05 ~ 2020.05.08
 
 ## 우분투 기본 패키지 설치
-- apt update && apt upgrade : 우분투 업그레이드
-- apt install vim : VI에디터 설치
-- apt install net-tools : 통신 패키지 설치 
-- apt install sudo : sudo 명령어 설치
+- ```$ apt update``` && ```apt upgrade``` : 우분투 업그레이드
+- ```$ apt install vim``` : VI에디터 설치
+- ```$ apt install net-tools``` : 통신 패키지 설치 
+- ```$ apt install sudo``` : sudo 명령어 설치
   <p align = 'center'>
     <img src = "https://github.com/KGJsGit/my_Cloud-studio/blob/master/pics/f2-2.JPG">
     (잘 설치가 된 것을 볼 수 있다.)
   </p>
   
 ## 우분투 기본 명령어
-- ls : 해당 디렉토리에 있는 파일의 목록 나열
-- cd : 디렉토리를 이동
-- pwd : 현재 디렉토리의 전체 경로를 출력(print working dirictory)
-- rm : 파일이나 디렉토리를 삭제
-- mv : 파일과 디렉토리의 이름을 변경하거나 위치 이동
-- mkdir : 새로운 디렉토리 생성
-- rmdir : 디렉토리 삭제
-- cat : 텍스트로 작성된 파일을 화면에 출력
-- touch : 크기가 0인 새 파일을 생성, 이미 존재하는 경우 수정시간을 변경
+- ```$ ls``` : 해당 디렉토리에 있는 파일의 목록 나열
+- ```$ cd [디렉토리]```: 디렉토리를 이동
+- ```$ pwd``` : 현재 디렉토리의 전체 경로를 출력(print working dirictory)
+- ```$ rm [파일명 || 디렉토리 명]``` : 파일이나 디렉토리를 삭제
+- ```$ mv [파일명] [파일명 || 디렉토리명]```: 파일과 디렉토리의 이름을 변경하거나 위치 이동
+- ```$ mkdir [디렉토리 명]``` : 새로운 디렉토리 생성
+- ```$ rmdir [디렉토리 명]``` : 디렉토리 삭제
+- ```$ cat [파일명] [텍스트]``` : 텍스트로 작성된 파일을 화면에 출력
+- ```$ touch [파일명]``` : 크기가 0인 새 파일을 생성, 이미 존재하는 경우 수정시간을 변경
 
 ## 파일과 디렉토리의 소유 및 허가권
 - /는 최상위 디렉토리인 루트디렉토리를 의미하며 모든 디렉토리의 시작점입니다.
