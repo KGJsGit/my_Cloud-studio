@@ -3,8 +3,8 @@
 - 2020.05.18 ~ 2020.05.21
 
 ## 웹페이지는 어떻게 우리에게 보여지게 되는 것일까?
-- 우리가 브라우저에서 특정한 파일(웹페이지)를 원한다고 명령하면 HTTP를 통해 웹서버에 파일을 요청합니다.
-- 올바른 HTTP Request가 웹서버에 도착하면 HTTP 서버는 요청된 파일(홈페이지)를 HTTP response로 보냅니다.
+- 우리가 브라우저에 특정한 파일(웹페이지)를 원한다고 명령하면 HTTP request를 통해 해당 웹서버에 파일을 요청합니다.
+- 올바른 HTTP Request가 웹서버에 도착하면 HTTP서버가 요청된 파일(홈페이지)를 HTTP response로 응답합니다.
 - 즉, 웹서버를 구축한다는 것은 사용자에게 파일(홈페이지)을 서비스 받을 수 있도록 하는 것입니다!
 - 웹서버는 하드웨어 형태로 존재하는게 일반적이지만, 클라우드를 활용하면 무형의 웹서버를 굴릴 수 있습니다!
   <p align = 'center'>
@@ -95,12 +95,12 @@
    <img src = "https://github.com/KGJsGit/my_Cloud-studio/blob/master/pics/fp4/fp4_7.JPG"><br>
    (1 -> 0)
   </p>
-- 연동이 잘 되었는지 확인하려면 nginx를 restart하고 php를 start해주면 됩니다.
+- nginx를 restart하고 php를 start해주면 연동이 됩니다.
   ```
   $ service nginx restart
   $ service php7.3-fpm start
   ```
-- 이제 간단한 파일을 만들어서 브라우저에 띄워봅시다!
+- 잘 연동되었는지 확인하기 위해 간단한 파일을 만들어서 브라우저에 띄워봅시다!
   ```
   $ cd /var/www/html
   $ vim test.php
@@ -109,7 +109,8 @@
     ?>
   ```
  <p align = 'center'>
-   <img src = "https://github.com/KGJsGit/my_Cloud-studio/blob/master/pics/fp4/fp4_8.JPG">
+   <img src = "https://github.com/KGJsGit/my_Cloud-studio/blob/master/pics/fp4/fp4_8.JPG"><br>
+   (localhost/test.php)
   </p>
   
 ## 발생했던 이슈들
