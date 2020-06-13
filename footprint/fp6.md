@@ -34,7 +34,7 @@
    </p>
 - Docker terminal을 켜고 해당 디렉토리로 이동한 뒤 Dockerfile을 빌드해줍니다.<br>
 - 맨 뒤의 점은 해당 디렉토리를 의미합니다.
-``` $ docker build --tag [계정명]/[이미지명]:0.1 .```
+- ``` $ docker build --tag [계정명]/[이미지명]:0.1 .```
   <p align = 'center'>
     <img src = "https://github.com/KGJsGit/my_Cloud-studio/blob/master/pics/fp6/fp6_5.JPG">
   </p>
