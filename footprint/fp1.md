@@ -7,7 +7,7 @@
 - 넉넉하게 컴퓨터자원을 할당해주어서 그나마 수월하게 할 수 있었습니다.
 - 더 좋은 방법을 없을까???...
   <p align = 'center'>
-    <img src = "https://github.com/KGJsGit/my_Cloud-studio/blob/master/pics/ubuntu.JPG"><br>
+    <img src = "https://github.com/koptimizer/my_Cloud-studio/blob/master/pics/ubuntu.JPG"><br>
     (너무 느려서 돌아버림...)
   </p>
 
