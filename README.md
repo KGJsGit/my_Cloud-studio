@@ -10,4 +10,4 @@
 3. [VIM이랑 친해지기](https://github.com/koptimizer/my_Cloud-studio/blob/master/footprint/fp3.md)
 4. [Debian-buster+nginx+php로 웹서버 구축하기](https://github.com/koptimizer/my_Cloud-studio/blob/master/footprint/fp4.md)
 5. [Network의 기초와 보안]()
-6. [ocker 200% 활용하기](https://github.com/koptimizer/my_Cloud-studio/blob/master/footprint/fp6.md)
+6. [Docker 200% 활용하기](https://github.com/koptimizer/my_Cloud-studio/blob/master/footprint/fp6.md)
