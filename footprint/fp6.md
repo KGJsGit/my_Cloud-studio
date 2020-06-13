@@ -27,7 +27,7 @@
    <img src = "https://github.com/KGJsGit/my_Cloud-studio/blob/master/pics/fp6/fp6_3.JPG">
    </p>
    
-- 해당 디렉토리로 이동해서 Dockerfile을 생성하고 원하는 환경을 코딩합니다. (확장자 없어야 합니다.)
+- 해당 디렉토리로 이동해서 Dockerfile을 생성하고 원하는 환경을 코딩합니다. (확장자X)
 - Dokcerfile의 언어는 구글의 go입니다.
   <p align = 'center'>
    <img src = "https://github.com/KGJsGit/my_Cloud-studio/blob/master/pics/fp6/fp6_4.JPG">
@@ -63,3 +63,10 @@
   <p align = 'center'>
     <img src = "https://github.com/KGJsGit/my_Cloud-studio/blob/master/pics/fp6/fp6_10.JPG">
    </p>
+   
+## 발생했던 이슈들
+- 딱히 어려움은 없었으나... 이메일 인증을 안하면 Docker Hub에서 push가 잘 되었는지 확인이 안되네요. 이메일인증 필수!
+
+## 느낀점
+- 도커가 컨테이너 스킬의 표준으로 자리잡을 수 있었던 이유를 느껴볼 수 있었습니다.
+- 배포와 테스트 관점에서 정말 편리한 기술이라는게 다시 한번 체감되었습니다.
